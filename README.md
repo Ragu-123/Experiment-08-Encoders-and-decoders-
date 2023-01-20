@@ -60,37 +60,54 @@ D7 = X Y Z
 
 
 ### PROGRAM 
-/*
+
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by:RAGUNATH R
+RegisterNumber:22008922 
+ENCODERS:
+module enc(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a,b,c;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
+DECODERS:
 
-
-
-
+module enc(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+input a,b,c;
+output d0,d1,d2,d3,d4,d5,d6,d7;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
 
 
 ### RTL LOGIC  
 
-
-
-
-
-
+![WhatsApp Image 2023-01-20 at 13 59 34](https://user-images.githubusercontent.com/113915622/213652378-3ebde78e-95c7-49b1-8896-546c094c9b84.jpg)
+![WhatsApp Image 2023-01-20 at 14 05 22](https://user-images.githubusercontent.com/113915622/213652823-c43e27e7-a7c9-4d19-a067-f32ffdac36f2.jpg)
 
 
 ### TIMING DIGRAMS  
-
+![WhatsApp Image 2023-01-20 at 14 03 02](https://user-images.githubusercontent.com/113915622/213652426-0f4a0f46-1c2f-41f0-9f4b-28cd5f94cfa4.jpg)
+![WhatsApp Image 2023-01-20 at 14 05 59](https://user-images.githubusercontent.com/113915622/213653193-615e64bb-bc9c-47eb-9cec-dd39c218ec4b.jpg)
 
 
 
 
 ### TRUTH TABLE 
-
+![WhatsApp Image 2023-01-20 at 14 03 32](https://user-images.githubusercontent.com/113915622/213652474-ffdf8881-bd11-43f3-af22-164fa1d31a20.jpg)
+![WhatsApp Image 2023-01-20 at 14 06 32](https://user-images.githubusercontent.com/113915622/213653231-0e86509e-2f60-4993-bf9e-55f0ea9d8ebe.jpg)
 
 
 
 
 
 ### RESULTS 
+Thus the program to desing encoder and decoder is done.
