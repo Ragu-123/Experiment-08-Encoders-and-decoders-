@@ -56,7 +56,19 @@ D7 = X Y Z
 
 ### Procedure
 /* write all the steps invloved */
+Step1:- Open the quartus II software
 
+Step2:- Create a new project.
+
+Step3:- Name the projects such that the same name is used for mentioning the name of the module.
+
+Step4:- Develop programmes for both Encoder and Decoder using verilog programming.
+
+Step5:- Run RTL Simulation.
+
+Step6:- Create the Timing diagram.
+
+Step7:- Validate the outputs.
 
 
 ### PROGRAM 
